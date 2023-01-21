@@ -1,0 +1,24 @@
+library(rgl)
+library(geomorph) 
+library(Arothron)
+
+setwd("C:...")	
+
+## LOAD LANDMARK COORDINATES ## 
+	coords <- read.amira.dir("EG_Landmarks_Combined",30)	
+
+## LOAD CLASSIFIER FILE ## opening classifier file
+	Classifier <- read.csv("EG-GM-Combined-Classifier.csv") 
+			
+## SETTING UP YOUR COORDINATE DATA ##
+	Y.gpa <- gpagen(coords)	# perform procrustes analysis
+	
+## CREATING A GEOMORPH DATA FRAME FOR THE COORDS AND CLASSIFIER ##
+	GDF <- geomorph.data.frame(landmarks = Y.gpa$coords, species = Classifier$Species, order = Classifier$Order, subgroup = Classifier$Subgroup, trial = Classifier$Trial)
+		
+## RUNNING SIMPLE PCA - Trial ##
+	PCA <- gm.prcomp(Y.gpa$coords)
+	plot(PCA,  pch = 19, cex = 1.5, col = as.factor(Classifier$Trial))			
+	legend("topright", pch = 19, cex = 1,   legend = unique(Classifier$Trial), col = unique(as.factor(Classifier$Trial)), bty = "n")
+	text(PCA$x, PCA$y, labels = Classifier$Species, cex = 0.2, offset = 10)	
+	

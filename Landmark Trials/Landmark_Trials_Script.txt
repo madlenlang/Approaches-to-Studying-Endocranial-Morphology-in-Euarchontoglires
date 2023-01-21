@@ -1,0 +1,53 @@
+library(geomorph)
+library(Arothron)
+
+setwd("C:...")	#set the working directory
+
+## LOAD LANDMARK COORDINATES ## 
+	coords <- read.amira.dir("Trials_Landmarks",30)	
+							
+## LOAD CLASSIFIER FILE ## 
+	Classifier <- read.csv("EG-GM-Trials-Classifier.csv") 
+
+## COORDINATE DATA ##	
+	Y.gpa <- gpagen(coords)	# perform procrustes analysis
+	GDF <- geomorph.data.frame(landmarks = Y.gpa$coords, species = Classifier$Species, observer = Classifier$Observer, trial = Classifier$Trial)
+		
+## RUNNING SIMPLE PCA ##
+	PCA <- gm.prcomp(Y.gpa$coords)
+		summary(PCA)
+		pvar <- (PCA$sdev^2)/(sum(PCA$sdev^2))	
+	plot(PCA, pch = as.numeric(as.factor(Classifier$Species)), cex = 1, col = as.factor(Classifier$Observer))	
+	legend("topleft", pch = 1, legend = unique(Classifier$Observer), col = unique(as.factor(Classifier$Observer)))
+	legend("topright", pch = unique(as.factor(Classifier$Species)), legend = unique(Classifier$Species))
+
+## RUNNING PANOVA ##
+	PANOVA <- procD.lm(landmarks~species+observer*species+observer*as.factor(trial), data = GDF, iter = 9999)
+		summary(PANOVA)
+	
+## put all landmarks data into a file (procrustes coordinates) needed for calculating error in MS Excel ##
+	CLO <- cbind(two.d.array(Y.gpa$coords),Classifier[,2:4])
+		#write.csv(Csize,"Compiled_Landmarks_gpa.csv")
+	
+## put all landmarks data into a file (raw coordinates - mm) needed for calculating error in MS Excel ##
+	CLOmm <- cbind(two.d.array(Y.gpa$coords),Classifier[,2:4])
+		#write.csv(CLOmm,"Compiled_Landmarks.csv")
+		
+## PUT INTERLANSMARK DISTANCES INTO A FILE (mm) ## 
+	wireframe <- read.morphologika("wireframe.txt") 
+		# Note on wireframe.txt document:
+			# I had a lot of trouble formatting the wireframe for this data. I ended up reusing an old file and formatting the wireframe within it. 
+			# This file has landmarks from my pilot analysis of Euarchontoglires of endocranial shape. 
+			# Please disregard the landmarks that are in this file as they are not part of this analysis. 
+		
+	GDFmm <- geomorph.data.frame(landmarks = coords, species = Classifier$Species, observer = Classifier$Observer, trial = Classifier$Trial)
+	lmdistmm <- interlmkdist(GDFmm$landmarks, wireframe$wireframe)
+		#write.csv(lmdistmm,"lmdist_mm.csv")
+	
+## GET CENTROID SIZE ##
+	Csize.df <- cbind(two.d.array(Csize),Classifier[,2:4])
+		#write.csv(Csize,"Csize.csv")
+		
+
+
+

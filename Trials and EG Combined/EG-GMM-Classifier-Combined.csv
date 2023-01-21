@@ -1,0 +1,101 @@
+﻿ID,Species,Subgroup,Order,Trial,N
+Aplodontia_rufa_Landmarks,Aplodontia rufa,SRC,Rodentia ,Rodentia ,1
+Ateles_geoffroyi_Landmarks,Ateles geoffroyi,Anthropoidea,Primates,Primates,2
+Bathyergus_suillus_Landmarks,Bathyergus suillus,Ctenohystrica,Rodentia ,Rodentia ,3
+Callicebus-moloch-Landmarks,Callicebus moloch,Anthropoidea,Primates,Primates,4
+Callithrix_argentata_Landmarks,Callithrix argentata,Anthropoidea,Primates,Primates,5
+Canomys_badius_Landmarks,Canomys badius,MRC,Rodentia ,Rodentia ,6
+Capromys_pilorides_Landmarks,Capromys pilorides,Ctenohystrica,Rodentia ,Rodentia ,7
+Castor_fiber_Landmarks,Castor fiber,MRC,Rodentia ,Rodentia ,8
+Cebus_apella_Landmarks,Cebus apella,Anthropoidea,Primates,Primates,9
+Chierogaleus-major-Landmarks,Chierogaleus major,Strepsirrhini,Primates,Primates,10
+Cricteus_cricetus_Landmarks,Cricetus cricetus,MRC,Rodentia ,Rodentia ,11
+Cynocephalus_volans_Landmarks,Cynocephalus volans,Dermoptera,Dermoptera,Dermoptera,12
+Dendrogale_melanura,Dendrogale melabura,Scandentia,Scandentia,Scandentia,13
+Galagoidea_demidoffi_Landmarks,Galagoides demidoffi,Strepsirrhini,Primates,Primates,14
+Galeopterus_variegatus_Landmarks,Galeopterus variegatus,Dermoptera,Dermoptera,Dermoptera,15
+Gerbilis_watersi_Landmarks,Gerbilis watersi,MRC,Rodentia ,Rodentia ,16
+Glis_glis_Landmarks,Glis glis,SRC,Rodentia ,Rodentia ,17
+Graphiurus_platyops_Landmarks,Graphiurus platyops,SRC,Rodentia ,Rodentia ,18
+Heliosciurus_rufobrachium_Landmarks,Heliosciurus rufobrachium,SRC,Rodentia ,Rodentia ,19
+Hyloptes_spadiceus_Landmarks,Hyloptes spadiceus,SRC,Rodentia ,Rodentia ,20
+Idiurus_macrotus_Landmarks,Idiurus macrotus,MRC,Rodentia ,Rodentia ,21
+Indri_indri_Landmarks,Indri indri,Strepsirrhini,Primates,Primates,22
+Jaculus_jaculus_Landmarks,Jaculus jaculus,MRC,Rodentia ,Rodentia ,23
+Lagostomus_maximus_Landmarks,Lagostomus maximus,Ctenohystrica,Rodentia ,Rodentia ,24
+Landmarks-Alouatta-Camilo-Trial-1,Alouatta palliata,Anthropoidea,Primates,Ap,25
+Landmarks-Alouatta-Camilo-Trial-2,Alouatta palliata,Anthropoidea,Primates,Ap,26
+Landmarks-Alouatta-Camilo-Trial-3,Alouatta palliata,Anthropoidea,Primates,Ap,27
+Landmarks-Alouatta-Camilo-Trial-4,Alouatta palliata,Anthropoidea,Primates,Ap,28
+Landmarks-Alouatta-Camilo-Trial-5,Alouatta palliata,Anthropoidea,Primates,Ap,29
+Landmarks-Alouatta-Camilo-Trial-6,Alouatta palliata,Anthropoidea,Primates,Ap,30
+Landmarks-Alouatta-Camilo-Trial-7,Alouatta palliata,Anthropoidea,Primates,Ap,31
+Landmarks-Alouatta-Maddy-Trial-1,Alouatta palliata,Anthropoidea,Primates,Ap,32
+Landmarks-Alouatta-Maddy-Trial-2,Alouatta palliata,Anthropoidea,Primates,Ap,33
+Landmarks-Alouatta-Maddy-Trial-3,Alouatta palliata,Anthropoidea,Primates,Ap,34
+Landmarks-Alouatta-Maddy-Trial-4,Alouatta palliata,Anthropoidea,Primates,Ap,35
+Landmarks-Alouatta-Maddy-Trial-5,Alouatta palliata,Anthropoidea,Primates,Ap,36
+Landmarks-Alouatta-Maddy-Trial-6,Alouatta palliata,Anthropoidea,Primates,Ap,37
+Landmarks-Alouatta-Maddy-Trial-7,Alouatta palliata,Anthropoidea,Primates,Ap,38
+Landmarks-Alouatta-Remi-Trial-1,Alouatta palliata,Anthropoidea,Primates,Ap,39
+Landmarks-Alouatta-Remi-Trial-2,Alouatta palliata,Anthropoidea,Primates,Ap,40
+Landmarks-Alouatta-Remi-Trial-3,Alouatta palliata,Anthropoidea,Primates,Ap,41
+Landmarks-Alouatta-Remi-Trial-4,Alouatta palliata,Anthropoidea,Primates,Ap,42
+Landmarks-Alouatta-Remi-Trial-5,Alouatta palliata,Anthropoidea,Primates,Ap,43
+Landmarks-Alouatta-Remi-Trial-6,Alouatta palliata,Anthropoidea,Primates,Ap,44
+Landmarks-Alouatta-Remi-Trial-7,Alouatta palliata,Anthropoidea,Primates,Ap,45
+Landmarks-Ochotona-Camilo-Trial-1,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,46
+Landmarks-Ochotona-Camilo-Trial-2,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,47
+Landmarks-Ochotona-Camilo-Trial-3,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,48
+Landmarks-Ochotona-Camilo-Trial-4,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,49
+Landmarks-Ochotona-Camilo-Trial-5,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,50
+Landmarks-Ochotona-Camilo-Trial-6,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,51
+Landmarks-Ochotona-Camilo-Trial-7,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,52
+Landmarks-Ochotona-Maddy-Trial-1,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,53
+Landmarks-Ochotona-Maddy-Trial-2,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,54
+Landmarks-Ochotona-Maddy-Trial-3,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,55
+Landmarks-Ochotona-Maddy-Trial-4,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,56
+Landmarks-Ochotona-Maddy-Trial-5,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,57
+Landmarks-Ochotona-Maddy-Trial-6,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,58
+Landmarks-Ochotona-Maddy-Trial-7,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,59
+Landmarks-Ochotona-Remi-Trial-1,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,60
+Landmarks-Ochotona-Remi-Trial-2,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,61
+Landmarks-Ochotona-Remi-Trial-3,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,62
+Landmarks-Ochotona-Remi-Trial-4,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,63
+Landmarks-Ochotona-Remi-Trial-5,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,64
+Landmarks-Ochotona-Remi-Trial-6,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,65
+Landmarks-Ochotona-Remi-Trial-7,Ochotona pallasi,Ochotonidae,Lagomorpha,Op,66
+Landmarks-Octodon-Camilo-Trial-1,Octodon degus,Ctenohystrica,Rodentia ,Od,67
+Landmarks-Octodon-Camilo-Trial-2,Octodon degus,Ctenohystrica,Rodentia ,Od,68
+Landmarks-Octodon-Camilo-Trial-3,Octodon degus,Ctenohystrica,Rodentia ,Od,69
+Landmarks-Octodon-Camilo-Trial-4,Octodon degus,Ctenohystrica,Rodentia ,Od,70
+Landmarks-Octodon-Camilo-Trial-5,Octodon degus,Ctenohystrica,Rodentia ,Od,71
+Landmarks-Octodon-Camilo-Trial-6,Octodon degus,Ctenohystrica,Rodentia ,Od,72
+Landmarks-Octodon-Camilo-Trial-7,Octodon degus,Ctenohystrica,Rodentia ,Od,73
+Landmarks-Octodon-Maddy-Trial-1,Octodon degus,Ctenohystrica,Rodentia ,Od,74
+Landmarks-Octodon-Maddy-Trial-2,Octodon degus,Ctenohystrica,Rodentia ,Od,75
+Landmarks-Octodon-Maddy-Trial-3,Octodon degus,Ctenohystrica,Rodentia ,Od,76
+Landmarks-Octodon-Maddy-Trial-4,Octodon degus,Ctenohystrica,Rodentia ,Od,77
+Landmarks-Octodon-Maddy-Trial-5,Octodon degus,Ctenohystrica,Rodentia ,Od,78
+Landmarks-Octodon-Maddy-Trial-6,Octodon degus,Ctenohystrica,Rodentia ,Od,79
+Landmarks-Octodon-Maddy-Trial-7,Octodon degus,Ctenohystrica,Rodentia ,Od,80
+Landmarks-Octodon-Remi-Trial-1,Octodon degus,Ctenohystrica,Rodentia ,Od,81
+Landmarks-Octodon-Remi-Trial-2,Octodon degus,Ctenohystrica,Rodentia ,Od,82
+Landmarks-Octodon-Remi-Trial-3,Octodon degus,Ctenohystrica,Rodentia ,Od,83
+Landmarks-Octodon-Remi-Trial-4,Octodon degus,Ctenohystrica,Rodentia ,Od,84
+Landmarks-Octodon-Remi-Trial-5,Octodon degus,Ctenohystrica,Rodentia ,Od,85
+Landmarks-Octodon-Remi-Trial-6,Octodon degus,Ctenohystrica,Rodentia ,Od,86
+Landmarks-Octodon-Remi-Trial-7,Octodon degus,Ctenohystrica,Rodentia ,Od,87
+Lemur_catta_Landmarks,Lemur catta,Strepsirrhini,Primates,Primates,88
+Lepus_americanus_Landmarks,Lepus americanus,Leporidae,Lagomorpha,Lagomorpha,89
+Mesomys_hispidus_Landmarks,Mesomys hispidus,Ctenohystrica,Rodentia ,Rodentia ,90
+Myoprocta_acouchy_Landmarks,Myoprocta acouchy,Ctenohystrica,Rodentia ,Rodentia ,91
+Ochotona_collaris_Landmarks,Ochotona collaris,Lagomorpha,Lagomorpha,Lagomorpha,92
+Ochotona_hyperborea_Landmarks,Ochotona hyperborea,Ochotonidae,Lagomorpha,Lagomorpha,93
+Oryctolagus_cunniculus_Landmarks,Oryctoloagus cunniculus,Leporidae,Lagomorpha,Lagomorpha,94
+Perodicticus_potto_Landmarks,Perodicticus potto,Strepsirrhini,Primates,Primates,95
+Ptilocercus_lowii_Landmarks,Ptilocercus lowii,Scandentia,Scandentia,Scandentia,96
+Sylvilagus_floridanus_Landmarks,Sylvilagus floridanus,Leporidae,Lagomorpha,Lagomorpha,97
+Tamasciurus_hudsonicus_Landmarks,Tamasciurus hudsonicus,SRC,Rodentia ,Rodentia ,98
+Tupaia_glis_Landmarks,Tupaia glis ,Scan,Scandentia,Scandentia,99
+Tupaia_palawanensis_Landmarks,Tupaia palawanensis,Scandentia,Scandentia,Scandentia,100

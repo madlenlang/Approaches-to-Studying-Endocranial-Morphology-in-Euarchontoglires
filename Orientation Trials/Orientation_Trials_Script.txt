@@ -1,0 +1,33 @@
+library(geomorph)
+library(Arothron)
+library(ggplot2)
+
+setwd("C:...")
+
+## LOAD LANDMARK COORDINATES ##
+	coords <- read.amira.dir("Orientation_Landmarks",6)
+
+## LOAD CLASSIFIER FILE ## 
+	Classifier <- read.csv("EG-GM-Orientation-Classifier.csv")
+
+## COORDINATE DATA ##	
+	Y.gpa <- gpagen(coords, Proj = TRUE, PrinAxes = TRUE)
+	GDF <- geomorph.data.frame(landmarks = Y.gpa$coords, species = Classifier$Species, observer = Classifier$Observer, trial = Classifier$Trial)
+	
+## RUNNING PANOVA ##
+	PANOVA <- procD.lm(landmarks~species+observer+observer*as.factor(trial), data = GDF, iter = 9999)
+		summary(PANOVA)
+		pvar <- (PCA$sdev^2)/(sum(PCA$sdev^2))
+
+## put all data into a file - needed for calculating error in MS Excel ##
+	CLO <- cbind(two.d.array(Y.gpa$coords),Classifier[,2:4])
+		write.csv(CLO,"Compiled_Landmarks_Orientation.csv")
+			
+## RUNNING SIMPLE PCA ##
+	PCA <- gm.prcomp(Y.gpa$coords)
+	plot(PCA, pch = as.numeric(as.factor(Classifier$Species)), cex = 1, col = as.factor(Classifier$Observer))	
+	legend("topleft", pch = 1, legend = unique(Classifier$Observer), col = unique(as.factor(Classifier$Observer)))
+	legend("topright", pch = unique(as.factor(Classifier$Species)), legend = unique(Classifier$Species))
+
+
+		

@@ -1,0 +1,45 @@
+library(geomorph)
+library(Arothron)
+library(rgl)
+
+setwd("C:...")	
+
+## LOAD CLASSIFIER FILE ## 
+	Classifier <- read.csv("GM-Ptilocercus-Classifier.csv") 
+	#dimnames(Y.gpa$coords) 								
+			
+## LOAD LANDMARK COORDINATES ##
+	coordsraw <- read.amira.dir("GM_Ptilocercus_Landmarks",30)	
+		c26 <- coordsraw[-26,,]
+		c25 <- c26[-25,,]
+		c23 <- c25[-23,,]
+		c14 <- c23[-14,,]
+	coordsLM <- c14[-5,,]
+	coordsSL1 <- read.amira.dir("B-Spline-1-ascii-Ptilocercus",6)		
+	coordsSL2raw <- read.amira.dir("B-Spline-2-ascii-Ptilocercus",6) 	
+		coordsSL2 <- coordsSL2raw[-1,,]									
+
+	coords.all <- combine.subsets(coordsLM, coordsSL1, coordsSL2, gpa = FALSE)	
+		coords.all$coords  														
+		
+## DFEFINE SLIDING LANDMARKS WITHIN COORDS FILE ##	
+	sliders <- rbind(define.sliders(26:31), define.sliders(31:36))	
+
+## SETTING UP YOUR COORDINATE DATA ##	
+	Y.gpa <- gpagen(coords.all$coords, curves = sliders)			
+		Y.gpa
+
+## CREATING A GEOMORPH DATA FRAME FOR THE COORDS AND CLASSIFIER ##
+	GDF <- geomorph.data.frame(landmarks = Y.gpa$coords, species = Classifier$Species, order = Classifier$Order, subgroup = Classifier$Subgroup, N =Classifier$N)
+	
+## RUNNING SIMPLE PCA - ORDER ##
+	PCA <- gm.prcomp(Y.gpa$coords)
+		summary(PCA)	
+	plot(PCA, pch = 19, cex = 1.5, col = as.factor(Classifier$Order))	
+	legend("topleft", pch = 19, cex = 1,  legend = unique(Classifier$Order), col = unique(as.factor(Classifier$Order)), bty = "n")
+	text(PCA$x, PCA$y, labels = Classifier$N, cex = 0.5, offset = 10)	
+
+## LESC ## requires lambda package (must use Rstudio)
+	ls <- lasec(coord.data = two.d.array(coords.all$coords), n.dim = 3, iter = 999) # SL included (not treated as sliders)
+	plot.lasec(la)	#to see graphs do to wd
+
